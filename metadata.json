@@ -1,0 +1,6 @@
+{
+  "name": "House Venture Resumes",
+  "description": "Pro-grade AI resume builder, cover letter generator, and ATS optimization engine built for elite professional career acceleration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

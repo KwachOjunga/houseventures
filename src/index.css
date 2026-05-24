@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base style resets */
+body {
+  background-color: #050b18; /* Luxurious Dark Blue */
+  color: #f8fafc; /* Crisp White/Slate */
+}
+
+/* Print CSS Configurations */
+@media print {
+  /* Hide all interactive dashboards, headers, sidebars */
+  .no-print, 
+  #builder-sidebar, 
+  #builder-header, 
+  #step-content-box, 
+  #builder-stepper, 
+  .print-hidden, 
+  #admin-panel, 
+  #growth-seo-directory, 
+  #sub-modal-backdrop, 
+  #ai-engine-module {
+    display: none !important;
+  }
+
+  /* Make the template preview span the whole printed canvas */
+  body, html {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-page, 
+  .print-section {
+    page-break-inside: avoid !important;
+  }
+
+  #preview-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Smooth custom sleek scrollbar metrics */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f24;
+}
+::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* sky-400 */
+  border-radius: 4px;
+}
