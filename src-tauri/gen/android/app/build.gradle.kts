@@ -3,6 +3,7 @@ import java.util.Properties
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
     id("rust")
 }
 
@@ -62,6 +63,9 @@ dependencies {
     implementation("androidx.webkit:webkit:1.14.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("androidx.activity:activity-ktx:1.10.1")
+    implementation(platform("com.google.firebase:firebase-bom:34.13.0")) //  firebase config
+    implementation("com.google.firebase:firebase-analytics") 
+     implementation("com.google.firebase:firebase-auth") // firebase auth
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.lifecycle:lifecycle-process:2.10.0")
     testImplementation("junit:junit:4.13.2")
