@@ -8,9 +8,7 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.25")
     }
 }
-plugins {
-  id("com.google.gms.google-services") version "4.4.4" apply false
-}
+
 allprojects {
     repositories {
         google()
